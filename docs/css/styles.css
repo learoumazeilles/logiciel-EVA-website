@@ -10957,6 +10957,40 @@ header.masthead h1, header.masthead .h1 {
     font-size: 3.5rem;
   }
 }
+/*!
+Ajout
+*/
+header.pagehead {
+  padding-top: 7rem;
+  padding-bottom: calc(7rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(66, 92, 66, 0.8) 0%, rgba(66, 92, 66, 0.8) 100%), url("../assets/img/bg_masthead2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+header.pagehead h1, header.pagehead .h1 {
+  font-size: 2.25rem;
+}
+@media (min-width: 500px) {
+  header.pagehead {
+    height: 50vh;
+    min-height: 10rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  header.pagehead p {
+    font-size: 1.15rem;
+  }
+  header.pagehead h1, header.pagehead .h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  header.pagehead h1, header.pagehead .h1 {
+    font-size: 3.5rem;
+  }
+}
 
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl, #portfolio .container-xxl {
   max-width: 1920px;

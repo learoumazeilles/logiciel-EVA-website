@@ -11,29 +11,21 @@
         <!-- Bootstrap Icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=NunitoSans+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=NunitoSans:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
         <!-- SimpleLightbox plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+         <!-- script pour lier la nav barre-->
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="index.html#page-top">Logiciel EVA</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="application.html">Logiciel</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#ressources">Ressources</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <div id="nav-placeholder"></div>
+        <script>
+            $(function(){$("#nav-placeholder").load("navigation.html");});
+        </script>
         <!-- Pagehead-->
         <header class="pagehead">
             <div class="container px-4 px-lg-5 h-100">
@@ -53,13 +45,34 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <h2 class="text-white mt-0">Présentation</h2>
+                        <h2 class="text-white mt-0">EVA</h2>
                         <hr class="divider divider-light" />
-                        <p class="text-white-75 mb-4">Le logiciel EVA a été développé à l’initiative de la Fédération des parcs naturels régionaux de France (FPNRF) depuis 2007. Les utilisateurs sont les Parcs Naturels Régionaux (membres de la FPNRF), qui ont été rejoints en 2015 par l’Office Français de la Biodiversité (OFB) et les Parcs Nationaux ainsi que par les Parcs Naturels Marins en 2022. </p>
-                        <a class="btn btn-light btn-xl" href="#services">En savoir plus sur la gouvernance</a>
+                        <p class="text-white-75 mb-4">EVA est un logiciel modulable de gestion de projet adapté aux aires protégées (PNR, PNx, PNM). EVA a été conçu pour faciliter l’évaluation de la mise en œuvre des chartes ou plans de gestion des parcs et de capitaliser les données.</p>
                     </div>
                 </div>
             </div>
+        </section>
+        <!--Pratique-->
+        <section class="page-section bg" id="pratique">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-primary mt-0">EVA en pratique</h2>
+                        <hr class="divider" />
+                    </div>
+                </div>
+                    <div style="text-align: center;">
+                        <div class="py-lg-4">
+                        <img class="img-fluid" src="/assets/img/diag.png" alt="" width="700" height="391" />
+                        </div>
+                        <ul style=“list-style-type: circle>
+                            <li><strong><span style="color : var(--bs-primary)"> Organisation : </span></strong>Les fiches projet/action sont le module central du logiciel EVA, elles recensent les informations nécessaires sur les activités menées par le parc. Un système de référentiels et de mots clés permet un classement des fiches. Les autres modules principaux vont permettre de renseigner différents types de données qui peuvent ensuite être rattachés aux fiches.</li>
+                            <li><strong><span style="color : var(--bs-primary)"> Type de données :</span></strong> Les données peuvent concerner des données de suivi du terrain avec les indicateurs mais également des données de suivi de la gestion, avec les actions menées et leurs moyens humains et financiers associés, ainsi que des données de localisation et de partenariat.</li>
+                            <li><strong><span style="color : var(--bs-primary)"> Insertion des données :</span></strong> en remplissant des formulaires, par des imports de tableurs ou par des liaisons avec d’autres logiciels</li>
+                            <li><strong><span style="color : var(--bs-primary)"> Exploitation des données :</span></strong> Un module d’analyse permet de réaliser des analyses simples et interactives dans le logiciel.Les données peuvent être exploitées en les exportant sous différents formats (tableur ou texte).</li>
+                        </ul>
+                    </div>
+                </div>
         </section>
         <!--Mise en place-->
         <section class="page-section bg-primary" id="miseenplace">
@@ -83,10 +96,5 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>

@@ -603,6 +603,12 @@ progress {
   height: auto;
 }
 
+.img-max {
+  max-width: 500px;
+  min-width: 100px;
+  height: auto;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -10839,6 +10845,13 @@ body {
   padding: 8rem 0;
 }
 
+/*!
+Ajout
+*/
+.otherpage-section {
+  padding: 4rem 0;
+}
+
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75) !important;
 }
@@ -10963,7 +10976,7 @@ Ajout
 header.pagehead {
   padding-top: 7rem;
   padding-bottom: calc(7rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(66, 92, 66, 0.8) 0%, rgba(66, 92, 66, 0.8) 100%), url("../assets/img/bg_masthead2.png");
+  background: linear-gradient(to bottom, rgba(66, 92, 66, 0.8) 0%, rgba(66, 92, 66, 0.8) 100%), url("../assets/img/bg_masthead3.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;

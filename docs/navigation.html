@@ -17,6 +17,17 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+    <!-- script to have the page title in nav in green when on the page-->
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+        $(function(){
+        $('a').each(function(){
+            if ($(this).prop('href') == window.location.href) {
+                $(this).addClass('active'); $(this).parents('li').addClass('active');
+            }
+            });
+        });
+        </script>
     </head>
     <body id="page-top">
         <!-- Navigation-->

@@ -10848,6 +10848,29 @@ body {
 /*!
 Ajout
 */
+.icon-withtext {
+  display: block;
+  width: 20%;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.text-withicon {
+  display: block;
+  width: 80%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.container-texticon {
+  display: table;
+  position: relative;
+  max-width: 25rem;
+  min-width: 25rem;
+  padding: 1em 1em 1em 0;
+}
+
 .otherpage-section {
   padding: 4rem 0;
 }

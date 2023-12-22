@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Logiciel EVA - Website</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon_E.png" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=NunitoSans+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=NunitoSans:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+         <!-- script pour lier la nav barre-->
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+    <body id="page-top">
+<!-- Navigation-->
+        <div id="nav-placeholder"></div>
+        <script>
+            $(function(){$("#nav-placeholder").load("navigation.html");});
+        </script>
+        <!-- Pagehead-->
+        <header class="pagehead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-white font-weight-bold">Ressources</h1>
+                        <hr class="divider" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 mb-5">Pour tout savoir sur le logiciel EVA</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--Documentation-->
+        <section class="otherpage-section bg-primary" id="documentation">
+            <div class="container px-4 px-lg-5">
+                <div class="d-flex align-items-center" style="display: flex; justify-content: space-around; flex-direction: row;
+  flex-wrap: wrap;">
+                    <div class="mb-2"><i class="bi-journal fs-1p text-white"></i></div>
+                    <div class="col-lg-6 px-2">
+                        <h2 class="text-white text-center mt-0">Documentation</h2>
+                        <hr class="divider divider-light" />
+                        <ul class="text-black">
+                        <li><p><a href="https://documentation-eva.readthedocs.io/fr/latest/" title="Documentation technique" class="link_w">Documentation technique</a> : guide de l'utilisateur</p></li>
+                        <li><p><a href="https://fpnrf-my.sharepoint.com/:f:/g/personal/lroumazeilles_parcs-naturels-regionaux_fr/Epas2TGX8CRIhy0YeCNP9YsBEdGRb9bho8aiOq5JHO2n3Q" title="Centre de ressources" class="link_w">Centre de ressources</a> : partage de documents et enregistrements des webinaires</p></li>
+                        <li><p><a href="https://vimeo.com/showcase/6622623" title="Vidéos tuto" class="link_w">Vidéos tutoriels</a></p></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>        
+        <!--Communauté-->
+        <section class="otherpage-section bg" id="communauté">
+            <div class="container px-4 px-lg-5">
+                <div class="d-flex align-items-center" style="display: flex; justify-content: space-around; flex-direction: row;
+  flex-wrap: wrap;">
+                    <div class="mb-2"><i class="bi-people fs-1p text-primary"></i></div>
+                    <div class="col-lg-6 px-2">
+                        <h2 class="text-primary text-center mt-0">Communauté</h2>
+                        <hr class="divider" />
+                        <ul>
+                        <li><p><a href="https://framagroupes.org/sympa/subscribe/logiciel-eva?previous_action=info" class="link_b">Liste de diffusion</a> : échanges entre référents EVA</p></li>
+                        <li><p><a href="https://www.parcs-naturels-regionaux.fr/espace-membres/groupes/projet-eva-referents-eva" title="Centre de ressources" class="link_b">Groupe collaboratif des référents EVA</a> : intranet de la Fédération</p></li>
+                        <li><p>Café EVA tous les deuxièmes mardis du mois à 14h</p></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+<!--Documentation-->
+        <section class="otherpage-section bg-primary" id="Développements">
+            <div class="container px-4 px-lg-5">
+                <div class="d-flex align-items-center" style="display: flex; justify-content: space-around; flex-direction: row;
+  flex-wrap: wrap;">
+                    <div class="mb-2"><i class="bi-code-square fs-1p text-white"></i></div>
+                    <div class="col-lg-6 px-2">
+                        <h2 class="text-white text-center mt-0">Développements</h2>
+                        <hr class="divider divider-light" />
+                        <ul class="text-black">
+                        <li><p><a href="https://gitlab.com/logiciel-eva/logiciel-eva" title="GitLab" class="link_w">GitLab</a> : code et tickets</p></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>      
+        <!-- Footer-->
+        <iframe src="footer.html" width="100%" frameborder="0" scrolling="no"></iframe>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
